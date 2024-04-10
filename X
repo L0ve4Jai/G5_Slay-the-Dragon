@@ -1,0 +1,7 @@
+Menu = str(input("Welcome to Slay The Dragon choose a character: Wizard, Medic, Knight"))
+if Menu == "Medic":
+        print("You are a Medic, Strength: Healing, Weakness: Damage")
+elif Menu == "Knight":
+    print("You are a Knight, Strength: Damage, Weakness: Healing")
+elif Menu == "Wizard":
+     print("You are a Wizard, Strength: Healing,Damage, Weakness: Cooldown for spells")
