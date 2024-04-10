@@ -4,4 +4,4 @@ if Menu == "Medic":
 elif Menu == "Knight":
     print("You are a Knight, Strength: Damage, Weakness: Healing")
 elif Menu == "Wizard":
-     print("You are a Wizard, Strength: Healing,Damage, Weakness: Cooldown for spells")
+     print("You are a Wizard, Strength: Healing, Damage Weakness: Extended cooldown ")
