@@ -13,3 +13,6 @@ while True:
         break
     else:
         print("Please choose an active character to wield!")
+
+Inventory = {"Slot 1":"Healing" , "Slot 2":"Damage Buff", "Slot 3":"Tradable Items", "Slot 4": "Collectibles"}
+print(Inventory)
