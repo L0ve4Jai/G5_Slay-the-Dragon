@@ -16,6 +16,6 @@ while True:
 
 Inventory = {"Slot 1":"Healing" , "Slot 2":"Damage Buff", "Slot 3":"Tradable Items", "Slot 4": "Collectibles"}
 print(Inventory)
-Paladin Health = 100
-Knight Health = 100
-Wizard Health = 100
+Paladin_Health = 100
+Knight_Health = 100
+Wizard_Health = 100
