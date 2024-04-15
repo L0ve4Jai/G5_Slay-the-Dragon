@@ -19,3 +19,7 @@ print(Inventory)
 Paladin_Health = 100
 Knight_Health = 100
 Wizard_Health = 100
+
+Healing = 10
+if Healing >= 10:
+    print(Paladin_Health +,"You are at full health!")
