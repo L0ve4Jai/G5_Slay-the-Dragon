@@ -22,4 +22,8 @@ Wizard_Health = 100
 
 Healing = 10
 if Healing >= 10:
-    print(Paladin_Health +,"You are at full health!")
+    print("You are at full health!",Paladin_Health+50)
+
+Damaged = 6       
+if Damaged >= 6:
+    print("Health is now!",Paladin_Health-50)
