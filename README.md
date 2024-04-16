@@ -1,5 +1,5 @@
-Paladin_Health = 100
-Knight_Health = 100
+Paladin_Health = 150
+Cleric_Health = 75
 Wizard_Health = 100
 Goblin_Health = 300
 Dragon_Health = 1000
@@ -22,7 +22,7 @@ while True:
     else:
         print("Please choose an active charater to wield!")
 
-print("Be brazen young warrior, you lead on a trechourous path.")
+print("Be brazen, you lead on a trechourous path.")
 '''
 Inventory = {"Slot 1":"Healing" , "Slot 2":"Damage Buff", "Slot 3":"Tradable Items", "Slot 4": "Collectibles"}
 print(Inventory)
@@ -74,6 +74,6 @@ elif Dice == 6:
     print("Trade")
 
 
-WIN = print("VICTIORY! THE DRAGON HAS BEEN SLAYED AND THE VILLAGE IS SAVED")
+WIN = print("VICTIORY! THE DRAGON HAS BEEN SLAYED AND THE KINGDOM IS SAVED")
 print("THANK YOU FOR PLAYING")
 
