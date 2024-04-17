@@ -27,7 +27,12 @@ print("Be brazen, you lead on a trechourous path.")
 '''
 Inventory = {"Slot 1":"Healing" , "Slot 2":"Damage Buff", "Slot 3":"Tradable Items", "Slot 4": "Collectibles"}
 print(Inventory)
+
+Weapons = {" Knight's Arsenal":"Sword/Spear", "Wizard's Arsenal":"Staff and Spells","Paladin's Arsenal": " A bow and arrow, along with the healing and damage remedies."}
+
+print(Weapons)
 '''
+
 Healing = 6
 if Healing >= 6:
     print("You are at full health!",Paladin_Health+50)
