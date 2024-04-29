@@ -1,15 +1,39 @@
 from random import *
 def D_20():
     a = randint(1, 20)
-    print("you rolled a: ")
+    print("A", a, "was rolled")
     return a 
 
 def D_6():
     b = randint(1,6)
-    print("You rolled a: ")
+    print("A", b, "was rolled")
     return b 
+
+def D_4():
+    e = randint(1,4)
+    print("A", e, "was rolled")
 
 def D_12():
     c = randint(1,12)
-    print("You rolled a: ")
+    print("A", c, "was rolled")
     return c
+
+def D_10():
+    d = randint(1, 10)
+    print("A", d, "was rolled") 
+    return d
+
+
+class enemies: 
+    def __init__(self, health, enemy_armor, attack_1, attack_2, attack_3) :
+        self.health = health
+        self.enemy_armor = enemy_armor 
+        self.attack_1 = attack_1
+        self.attack_2 = attack_2
+        self.attack_3 = attack_3
+
+goblin = enemies(12, 15, {"smash": D_6()} , {"hit": D_4()}, {"bite": D_10()})
+print(goblin.attack_1)
+print(goblin.attack_2)
+troll = enemies(30, 12, {"bash": D_12()}, {"club": D_10()}, {"chomp": D_10()})
+print(troll.attack_3)
