@@ -1,9 +1,18 @@
-Paladin_Health = 200
-Cleric_Health = 100
-Wizard_Health = 150
-Dragon_Health = 1000
-Dice_one = 10
-Dice_two = "Fight"
+Class characters:
+ def __init__ (self, health, armor, attack1, attack2, attack3, spell1, spell2, spell3)
+ self.health = health
+ self. armor = armor
+ self.attack1 = attack1
+ self.attack2 = attack2 
+ self.attack3 = attack3
+ self.spell1 = spell1
+ self.spell2 = spell2
+ self.spell3 = spell3
+
+Paladin = characters(20, 100, {"slash": 2*D_12()) + 6},{"stab", 2*D_(8)+2}, {"Pierce", D_10()+6}, {"divine_smite", 12+6}, {"healing_hand", D_12()+8}), {"Holy_blast", 2*D_12()}
+Wizard = characters(16, 75, {"Shiv": D_8()) + 6},{"fireball", D_(12)+6}, {"eldrich_blast", D_12()+6}, {"lightning_bolt", D_10()+8}, {"Health_spell", D_12()+8}), {"necrotic_touch", 4*D_6()}
+Cleric = characters(18, 85, {"hammer_strike": D_10()) + 6},{"shield_bash", D_(12)+6}, {"holy_spear", 2*D_12()+6}, {"lightning_bolt", D_10()+8}, {"Health_spell", D_12()+8}), {"Light_of_the_goddess", 4*D_8()}
+
 
 from random import *
 def D_20():
