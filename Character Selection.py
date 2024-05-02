@@ -1,13 +1,49 @@
 Paladin_Health = 200
 Cleric_Health = 100
 Wizard_Health = 150
-Goblin_Health = 300
 Dragon_Health = 1000
-Gargoyle_Health = 500
 Dice_one = 10
 Dice_two = "Fight"
 
+from random import *
+def D_20():
+    a = randint(1, 20)
+    print("A", a, "was rolled")
+    return a 
 
+def D_6():
+    b = randint(1,6)
+    print("A", b, "was rolled")
+    return b 
+
+def D_4():
+    e = randint(1,4)
+    print("A", e, "was rolled")
+
+def D_12():
+    c = randint(1,12)
+    print("A", c, "was rolled")
+    return c
+
+def D_10():
+    d = randint(1, 10)
+    print("A", d, "was rolled") 
+    return d
+
+
+class enemies: 
+    def __init__(self, health, enemy_armor, attack_1, attack_2, attack_3) :
+        self.health = health
+        self.enemy_armor = enemy_armor 
+        self.attack_1 = attack_1
+        self.attack_2 = attack_2
+        self.attack_3 = attack_3
+
+goblin = enemies(12, 15, {"smash": D_6()} , {"hit": D_4()}, {"bite": D_10()})
+
+troll = enemies(30, 12, {"bash": D_12()}, {"club": D_10()}, {"chomp": D_10()})
+
+print(troll.attack_3)
 print("Welcome to Slay The Dragon™!")
 print('''In a realm shrouded in the mists of legend, the mighty kingdom of Vordania once reigned supreme, its borders guarded by the valor of its knights and the wisdom of its sovereign, King Soloman.
 Yet, under the cloak of night, a shadow darker than any before descended upon the land.
