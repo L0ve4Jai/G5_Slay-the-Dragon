@@ -53,21 +53,24 @@ But amidst the chaos, three heroes emerged, their resolve unyielding in the face
 Driven by a steadfast courage, they vowed to ascend the treacherous peaks of the forbidden mountain where the dragon dwelled, First among them was Wolfram Dawnwatcher, a stalwart defender whose unwavering faith in righteousness served as a beacon of hope amidst the encroaching shadows. 
 Alongside the paladin strode Adnos Weavemaster, a master of arcane arts whose intellect and mastery of magic were matched only by their unyielding determination to protect the realm from all manner of arcane threats.
 Completing the trio was Nicolene Lylet, a devoted servant of the gods whose healing hands and sacred prayers provided solace to those in need, bolstering the spirits of their comrades in the face of adversity.''')
-while True:
-    Menu = str(input("Please choose a mighty character to wield; Paladin, Wizard, Cleric: ")).lower()
-    if Menu == "cleric":
-        print("You have chosen the brave [CLERIC NAME], Strength: Healing, Weakness: Damage")
-        break
-    elif Menu == "paladin":
-        print("You have chosen the mighty [PALADIN NAME], Strength: Damage, Weakness: Healing")
-        break
-    elif Menu == "wizard":
-        print("You have chosen the intelligent [WIZARD NAME], Strength: Healing, Damage Weakness: Extended cooldown ")
-        break
-    else:
-        print("Please choose an active charater to wield!")
-
-print("Be brazen, you lead on a trechourous path.")
+player_list = {}
+def choose_character():
+    available_classes = ["paladin", "wizard", "cleric"]
+    for i in range(1, 4):
+        while True:
+            player_input = input(f"Player {i}, please choose your character: ").lower()
+            if player_input in available_classes:
+                player_list["Player ", i] = player_input
+                available_classes.remove(player_input)
+                print("Player ",i, "has chosen the ",player_input.title())
+                print("classes left:", available_classes )
+                break
+            else:
+                print("Please choose a valid class that has not been taken.")
+                continue
+    return player_list
+player_choices = choose_character()
+print("Character selection complete.")
 
 
 
