@@ -94,7 +94,11 @@ print("Gargoyles defeated")
 Stage3 = print("Welcone to the Trade Center")
 print("Trade and add to your Inventory")
 print("Trade for Health and Damage")
-Inventory["Slot 1 "] = ("Enter a Weapon, Spell, or Healing Archetype")
+Inventory = {"Slot1": "Healing" , "Slot2": "Damage Buff", "Slot3": "Tradable Items", "Slot4": "Collectibles"}
+print(Inventory)
+Inventory["Slot1"]  = {"Weapon"}
+del Inventory["Slot2"]
+Inventory["Slot5"]  = {"Sword"}
 print(Inventory)
 
 
